@@ -8,4 +8,4 @@ RUN npm install
 
 COPY . .
 
-CMD [ -d "node_modules" ] && npm run dev || npm ci && npm run dev
+RUN npm run build
